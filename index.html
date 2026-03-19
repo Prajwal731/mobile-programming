@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>10 CSS Div Examples</title>
+
+<style>
+
+body{
+font-family: Arial;
+text-align:center;
+}
+
+/* 1 Background Color */
+.div1{
+background-color: lightblue;
+padding:20px;
+margin:10px;
+}
+
+/* 2 Hover Color Change */
+.div2{
+background-color: lightgreen;
+padding:20px;
+margin:10px;
+}
+.div2:hover{
+background-color: orange;
+}
+
+/* 3 Font Size Change Button */
+.div3{
+background-color: pink;
+padding:20px;
+margin:10px;
+}
+
+
+.div4{
+background-color: lightgray;
+padding:20px;
+margin:10px;
+}
+
+
+.div5{
+padding:20px;
+margin:10px;
+background-color: lavender;
+}
+#img1{
+display:none;
+width:150px;
+}
+
+.div6{
+background-color: lightyellow;
+padding:20px;
+margin:10px;
+border-radius:20px;
+}
+
+
+.div7{
+background-color: white;
+padding:20px;
+margin:10px;
+box-shadow:0px 0px 10px gray;
+}
+
+/* 8 Transform Scale */
+.div8{
+background-color: lightcoral;
+padding:20px;
+margin:10px;
+transition:0.3s;
+}
+.div8:hover{
+transform:scale(1.2);
+}
+
+/* 9 Opacity Change */
+.div9{
+background-color: lightseagreen;
+padding:20px;
+margin:10px;
+opacity:0.6;
+}
+.div9:hover{
+opacity:1;
+}
+
+/* 10 Simple Animation */
+.div10{
+background-color: violet;
+padding:20px;
+margin:10px;
+animation: move 3s infinite alternate;
+}
+
+@keyframes move{
+from{transform:translateX(0);}
+to{transform:translateX(100px);}
+}
+
+</style>
+
+<script>
+
+function changeFontSize(){
+document.getElementById("text1").style.fontSize="30px";
+}
+
+function changeFontColor(){
+document.getElementById("text2").style.color="red";
+}
+
+function showImage(){
+document.getElementById("img1").style.display="block";
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="div1">1. Background Color Div</div>
+
+<div class="div2">2. Hover over me to change color</div>
+
+<div class="div3">
+<p id="text1">3. Change my font size</p>
+<button onclick="changeFontSize()">Change Font Size</button>
+</div>
+
+<div class="div4">
+<p id="text2">4. Change my font color</p>
+<button onclick="changeFontColor()">Change Color</button>
+</div>
+
+<div class="div5">
+<p>5. Click to show image</p>
+<button onclick="showImage()">Show Image</button>
+<br><br>
+<img id="img1" src="https://via.placeholder.com/150">
+</div>
+
+<div class="div6">6. Rounded Corner Div</div>
+
+<div class="div7">7. Box Shadow Effect</div>
+
+<div class="div8">8. Hover to Zoom</div>
+
+<div class="div9">9. Hover to change opacity</div>
+
+<div class="div10">10. Moving Animation</div>
+
+</body>
+</html>
